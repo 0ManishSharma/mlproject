@@ -27,7 +27,7 @@ def read_sql_data():
             db=db
         )
         logging.info('Connection Established',mydb)
-        df = pd.read_sql_query('Select * from stud',mydb)
+        df = pd.read_sql_query('Select * from students',mydb)
         print(df.head())
         return df
     except Exception as e:
